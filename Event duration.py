@@ -1,7 +1,5 @@
-import math
-
 data = [50.3, 338.4, 626.5, 959.4, 1317.9,
-        1716.7, 2134.3, 2565.5, 3085.6,3626.7]
+        1716.7, 2134.3, 2565.5, 3085.6, 3626.7]
 
 
 # 1- ساختن لیست Duration :
@@ -70,7 +68,3 @@ for p in range(len(new_dur_str) - 1):
             and new_dur_str[p+4] == "S" and new_dur_str[p + 5] == "L":
         s_seq = new_data[p + 5] - new_data[p + 1]
         print("S duration in LSSSSL is:", s_seq)
-
-
-
-
