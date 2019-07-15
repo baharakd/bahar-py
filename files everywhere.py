@@ -1,5 +1,7 @@
 import glob
 
+#فایلی که هیچ parent ی ندارد را بیابید
+
 list_of_no_parents=[]
 num_of_no_parents = 0
 list_of_files = glob.glob('./files/*.txt')
@@ -11,4 +13,3 @@ for f in list_of_files:
         num_of_no_parents += 1
 print(num_of_no_parents, "files has no parent.")
 print("list of files that has no parent:", list_of_no_parents)
-
