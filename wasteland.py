@@ -8,3 +8,4 @@ for line in f:
     words = line.split()
     num_words+=len(words)
 print(num_words)
+
