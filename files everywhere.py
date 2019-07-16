@@ -41,14 +41,20 @@ def find_parents_children(key):
     for f in list_of_files:
         inside = open(f,mode="r").read()
         if inside == key:
-            lst_ch.append(inside)
+            name_of_file = f[8:-4]
+            lst_ch.append(name_of_file)
     dic_p.update({key:lst_ch})
 
     return dic_p
 
-print(find_parents_children("1204674588"))
+print(find_parents_children("1073414247"))
+
 
 #for i in range(len(list_of_no_parents)):
- #   dic_key = list_of_no_parents[i]
-  #  dic_of_parents = find_parents_children(dic_key)
+    #dic_key = list_of_no_parents[i]
+dic_of_parents = find_parents_children("1073414247")
+children_in_dic_lst = dic_of_parents.get("1073414247")
+for j in range(len(children_in_dic_lst)):
+    new_key = children_in_dic_lst[j]
+    print(find_parents_children(new_key))
 
