@@ -50,8 +50,6 @@ for i in range(len(sections)):
         new_times_srtformat = make_new_time(new_b_t, new_e_t)
         new_times_list.append(new_times_srtformat)
 
-        # new_srtlist_items = join_with_content(line[0],new_times_srtformat,line[2],line[3])
-        # appent to new_subtitle.srt file
 new_sub =  open("new_subtitle.srt", mode="a")
 for f in range(len(sections)):
     text = sections[f]
@@ -59,7 +57,8 @@ for f in range(len(sections)):
         rep = new_times_list[k]
         pat = "\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}"
         new_text = re.sub(pat, rep, text)
-        #new_sub.write(new_text)
+        #print(new_text)
+        new_sub.write(new_text)
 
 
 
