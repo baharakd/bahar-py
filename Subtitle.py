@@ -60,7 +60,6 @@ for f in range(len(sections)):
         pat = "\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}"
         new_text = re.sub(pat, rep, text)
         #new_sub.write(new_text)
-        #new_sub.write(new_text)
 
 
 
