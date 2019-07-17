@@ -12,7 +12,7 @@ def is_triangle(input_str):
         alert = "these make a triangle!"
         validation = True
     else:
-        alert ="these dont make a triangle!"
+        alert = "these dont make a triangle!"
         validation = False
     return alert,validation
 
@@ -34,11 +34,10 @@ def triangle_type(input_str):
 
     return validation
 
-
 for i in range(len(lines)):
     valid = is_triangle(lines[i])
     print(lines[i], "==>", valid[0],"\n")
-    if valid[1]==True :
+    if valid[1] == True :
         tr_type = triangle_type(lines[i])
         print(tr_type,"\n\n")
 
