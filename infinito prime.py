@@ -3,29 +3,15 @@ def is_prime(num):
         if num%i == 0 :
             return False
     return True
+
+
 def get_primes(n):
         while True:
             if is_prime(n):
                 yield n
             n += 1
-a = get_primes(3)
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
-print(a.__next__())
+
+for i in get_primes(15):
+    print(i)
+
 
