@@ -13,5 +13,3 @@ def get_primes(n):
 
 for i in get_primes(15):
     print(i)
-
-
