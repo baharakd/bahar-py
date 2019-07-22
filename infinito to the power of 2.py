@@ -15,6 +15,6 @@ def pick_one_element(n):
         list_of_generator.append(next(infinito_power))
     return list_of_generator[-1]
 
-print("thats the element you picked : ", pick_one_element(125))
+print("thats the element you picked : ", pick_one_element(5))
 
 

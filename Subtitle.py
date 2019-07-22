@@ -57,7 +57,7 @@ for f in range(len(sections)):
         rep = new_times_list[k]
         pat = "\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}"
         new_text = re.sub(pat, rep, text)
-        #print(new_text)
+        print(new_text)
         new_sub.write(new_text)
 
 
