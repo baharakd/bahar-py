@@ -8,5 +8,7 @@ def flatten(lst):
             flatten(i)
         else:
             flattened_lst.append(i)
+
 flatten(nested_lst)
+
 print(flattened_lst)
