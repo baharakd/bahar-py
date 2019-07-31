@@ -14,6 +14,7 @@ def get_primes(n):
 
 prime = open("prime.txt", mode="w+", encoding="utf-8")
 for i in get_primes(45):
-    print(i)
     prime_txt = str(i)+"\n"
     prime.write(prime_txt)
+
+
